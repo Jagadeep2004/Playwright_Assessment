@@ -6,7 +6,7 @@ import registerData from '../test-Data/registerData.json';
 test.describe('Registration @smoke', () => {
 
     test.beforeEach(async ({ page, homePage }) => {
-        await page.goto('process.env.BASE_URL!');
+        await page.goto(process.env.BASE_URL!);
         await homePage.navigateToRegisterPage();
     });
 
