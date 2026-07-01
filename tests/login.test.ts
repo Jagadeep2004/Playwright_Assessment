@@ -6,7 +6,7 @@ import loginData from '../test-Data/loginData.json';
 test.describe('Login @regression', () => {
 
     test.beforeEach(async ({ page, homePage }) => {
-        await page.goto('/');
+        await page.goto(process.env.BASE_URL!);
         await homePage.navigateToLoginPage();
     });
 

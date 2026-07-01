@@ -6,7 +6,7 @@ import searchData from '../test-Data/searchData.json';
 test.describe('Product Search @smoke', () => {
 
     test.beforeEach(async ({ page }) => {
-        await page.goto('/');
+        await page.goto('process.env.BASE_URL!');
     });
 
     test('Validate product search', async ({searchPage}) => {
