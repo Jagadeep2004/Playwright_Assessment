@@ -1,0 +1,17 @@
+{
+  "validUser": {
+    "email": "jagadeep0077@gmail.com",
+    "password": "admin",
+    "expected": "success"
+  },
+  "invalidEmail": {
+    "email": "jagadeep00777@gmail.com",
+    "password": "admin",
+    "expected": "failure"
+  },
+  "wrongPassword": {
+    "email": "jagadeep0077@gmail.com",
+    "password": "aadmin",
+    "expected": "failure"
+  }
+}
